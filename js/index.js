@@ -127,3 +127,25 @@ contactContent[2].textContent = siteContent['contact']['email'];
 let footer = document.querySelector('footer p');
 footer.textContent = siteContent['footer']['copyright'];
 
+//Nav Color
+let navColor = document.querySelectorAll('nav a');
+navColor[0].style.color = 'green';
+navColor[1].style.color = 'green';
+navColor[2].style.color = 'green';
+navColor[3].style.color = 'green';
+navColor[4].style.color = 'green';
+navColor[5].style.color = 'green';
+
+//Nav Additions
+let navBar = document.querySelector('nav');
+let newNav = document.createElement('a');
+newNav.textContent = "New Nav";
+newNav.setAttribute('href', '#')
+newNav.style.color = 'green';
+navBar.prepend(newNav);
+
+let newNav2 = document.createElement('a');
+newNav2.textContent = 'New Nav 2';
+newNav2.setAttribute('href', '#');
+newNav2.style.color = 'green';
+navBar.appendChild(newNav2);
